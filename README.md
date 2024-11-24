@@ -1,4 +1,4 @@
-# team
+# TEAM
 # Team Project Repository
 
 Welcome to the **Team Project Repository**! This repository contains the source code and documentation for our software engineering project.
