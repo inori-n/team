@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通讯录</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>通讯录</h1>
+        <!-- 表单 -->
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="姓名" required>
+            <input type="text" id="phone1" placeholder="电话1" required>
+            <input type="text" id="phone2" placeholder="电话2">
+            <input type="email" id="email1" placeholder="邮箱1" required>
+            <input type="email" id="email2" placeholder="邮箱2">
+            <input type="text" id="address" placeholder="地址">
+            <!-- 添加与更新按钮 -->
+            <button type="submit" id="addButton"><img src="webimage/add.png">&nbsp;添加/更新联系人</button>
+            <button type="button" id="updateButton" style="display: none;">更新联系人</button>
+        </form>
+        <div class="threebtns">
+            <!-- 导出与导入功能 -->
+            <button id="exportButton"><img src="webimage/out.svg">&nbsp;导出联系人</button>
+            <input type="file" id="importInput" style="display: none;">
+            <button id="deleteAllButton"><img src="webimage/delete.png">&nbsp;删除所有联系人</button>
+            <button id="importButton"><img src="webimage/in.svg">&nbsp;导入联系人</button>
+        </div>
+        <!-- 联系人列表 -->
+        <h2>联系人列表</h2>
+        <ul id="contactList"></ul>
+
+
+        <!-- 收藏的联系人 -->
+        <h2>收藏的联系人列表</h2>
+        <ul id="favoriteList"></ul>
+    </div>
+
+    <script src="address.js"></script>
+
+</body>
+
+
+</html>
