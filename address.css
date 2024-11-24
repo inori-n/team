@@ -10,7 +10,7 @@ body {
 
 /* 容器样式 */
 .container {
-    max-width: 600px;
+    max-width: 60%;
     margin: 0 auto;
     padding: 20px;
     background: white;
@@ -42,7 +42,7 @@ input {
 /* 按钮样式 */
 button {
     padding: 10px;
-    background-color: #28a745;
+    background-color: #289fa7;
     color: white;
     border: none;
     border-radius: 5px;
@@ -52,11 +52,12 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #303b9f;
 }
 
 button img {
     height: 0.92rem;
+
 
 
 
@@ -70,29 +71,49 @@ button img {
 #updateButton {
     display: none;
     /* 默认隐藏 */
-    background-color: rgb(226, 39, 39);
+    background-color: rgb(255, 255, 255);
     /* 红色背景 */
 }
 
-#updateButton:hover {
-    background-color: rgb(200, 30, 30);
-    /* 悬停时变深 */
-}
+
 
 /* 联系人列表样式 */
 ul {
     list-style-type: none;
+    /* 去掉列表前的默认符号 */
     padding: 0;
+    /* 去掉默认内边距 */
 }
 
 li {
     padding: 10px;
+    /* 每个列表项的内边距 */
     border: 1px solid #ccc;
+    /* 列表项边框 */
     border-radius: 5px;
+    /* 边框圆角 */
     margin-bottom: 10px;
+    /* 列表项之间的间距 */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* 使用 flexbox 布局 */
+    flex-direction: column;
+    /* 垂直排列内容 */
+}
+
+.button-container {
+    display: flex;
+    /* 使用 flexbox 布局 */
+    justify-content: flex-end;
+    /* 将按钮向右侧对齐 */
+    gap: 10px;
+    /* 按钮之间的间距 */
+    margin-top: 5px;
+    /* 设置与上方内容的间距 */
+}
+
+.button-container button {
+    padding: 5px 10px;
+    /* 按钮内边距 */
 }
 
 /* 删除所有联系人按钮样式 */
@@ -106,4 +127,25 @@ li {
 
 #deleteAllButton:hover {
     background-color: #c82333;
+}
+
+.threebtns {
+    display: flex;
+    /* 设置为 flexbox 布局 */
+    justify-content: center;
+    /* 水平居中对齐 */
+    gap: 4%;
+    /* 按钮之间设置间距 */
+    margin-top: 20px;
+    /* 可选：设置按钮区的上边距 */
+}
+
+.threebtns button {
+    width: 32%;
+}
+
+/* 设置联系人信息的字体大小 */
+.contact-container div {
+    font-size: 18px;
+    /* 这里可以调整字体大小 */
 }
